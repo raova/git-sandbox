@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 The first commit to the file. This line will be commited to the repository.
+=======
+Git Repo1
+>>>>>>> f66d856d932c2775fda34e16973f6730c2d35704
