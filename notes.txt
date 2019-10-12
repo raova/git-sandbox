@@ -1,7 +1,381 @@
 Git Notes
 
+pwd
+ssh-keygen.exe
+ssh-keyscan.exe -H git_server_hostname >> known_hosts
+hostname
+ssh-keyscan.exe -H sahatech01 >> known_hosts
+echo "******************************************************************************"
+echo "Amend hosts file with public, private and virtual IPs." `date`
+echo "******************************************************************************"
+cat >> /etc/hosts <<EOF
+# Public
+${NODE1_PUBLIC_IP}  ${NODE1_FQ_HOSTNAME}  ${NODE1_HOSTNAME}
+${NODE2_PUBLIC_IP}  ${NODE2_FQ_HOSTNAME}  ${NODE2_HOSTNAME}
+# Private
+${NODE1_PRIV_IP}  ${NODE1_FQ_PRIVNAME}   ${NODE1_PRIVNAME}
+${NODE2_PRIV_IP}  ${NODE2_FQ_PRIVNAME}   ${NODE2_PRIVNAME}
+# Virtual
+${NODE1_VIP_IP}  ${NODE1_FQ_VIPNAME}    ${NODE1_VIPNAME}
+${NODE2_VIP_IP}  ${NODE2_FQ_VIPNAME}    ${NODE2_VIPNAME}
+EOF
+
+pwd
+cd rac
+cd vagrant/rac/dns/
+dir
+ls
+pwd
+vagrant up
+vagrant destroy -f
+vagrant up
+ls -lrt
+vagrant destroy -f
+vagrant up
+vagrant destroy -f
+vagrant up
+vagrant destroy -f
+vagrant up
+vagrant destroy -f
+exit
+pwd
+git clone https://github.com/oraclebase/vagrant.git
+pwd
+cd vagrant/rac/dns/
+vagrant up
+exit
+git clone https://github.com/oraclebase/vagrant.git
+git clone https://github.com/oraclebase/vagrant.git
+cd vagrant/rac/dns/
+vagrant up
+vagrant destroy -f
+vagrant up
+cd ../..
+dir
+cd rac
+cd node2/
+ls -lrt
+vagrant up
+vagrant destroy -f
+vagrant destroy -f
+vagrant up
+cd ../node1
+ls -lrt
+vagrant up
+. /vagrant_config/install.env
+echo "******************************************************************************"
+echo "Prepare yum with the latest repos." `date`
+echo "******************************************************************************"
+cd /etc/yum.repos.d
+#rm -f public-yum-ol6.repo
+#wget http://yum.oracle.com/public-yum-ol6.repo
+rm -f public-yum-ol7.repo
+wget http://yum.oracle.com/public-yum-ol7.repo
+sh /vagrant_scripts/configure_hosts_base.sh
+sh /vagrant_scripts/configure_hosts_scan.sh
+echo "******************************************************************************"
+echo "Install dnsmasq." `date`
+echo "******************************************************************************"
+yum install -y dnsmasq
+systemctl enable dnsmasq
+systemctl restart dnsmasq
+cd vagrant/ol7_122/
+dir
+vagrant up
+vagrant destroy -f
+vagrant up --debug
+vagrant up --debug
+vagrant up --debug
+ping 0l7-122-vagrant
+vagrant destroy -f
+vagrant up --debug
+vagrant destroy -f
+vagrant up --debug
+vagrant -v
+git --version
+pwd
+cd vagrant
+pwd
+git clone https://github.com/matthewbaldwin/vagrant-wls12c-centos64.git
+pwd
+dir
+cd vagrant-wls12c-centos64/
+dir
+vagrant box list
+dir
+whcih vagrant
+which vagrant
+pwd
+vagrant up
+dir
+lt
+vagrant init bento/centos-6.7
+vagrant up
+tree
+vagrant destroy
+exit
+pwd
+pwd
+cd vagrant/
+cd rac
+ls
+cd dns
+vagrant destroy
+dir
+pwd
+cd ..
+dir
+cd node1
+vagrant destrot
+vagrant destroy
+dir
+cd ../node2
+vagrant destroy
+pwd
+cd ..
+dir
+cd ..
+dir
+vagrant destroy
+exit
+pwd
+git clone https://github.com/oraclebase/vagrant.git
+exit
+exit
+pwd
+git clone https://github.com/oraclebase/vagrant.git
+git clone https://github.com/oraclebase/vagrant.git
+exit
+pwd
+exit
+java -v
+exit
+pwd
+dir
+cd Downloads/
+dir
+tar
+tar -xzvf openssl-1.0.2q.tar.gz
+cd openssl-1.0.2q
+openssl -version
+openssl version
+openssl version -a
+cd /mingw64
+lt
+ls
+cd sll
+cd ssl
+ls -lrt
+openssl help
+openssl ciphers
+man ciphers
+ls
+cd
+python
+python3
+python2
+choco install python
+exit
+python3
+eenv
+set
+exit
+pwd
+flickr-cli auth
+pwd
+dir
+./flickr-cli auth
+cd ..
+pwd
+dir
+composer install
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+./bin/flickr-cli download -d photosets
+exit
+git clone https://github.com/TheFox/flickr-cli.git
+composer install
+./bin/flickr-cli auth
+pwd
+pwd
+exit
+ composer install
+php composer install
+php composer.lock install
+./bin/flickr-cli auth
+composer install
+php composer.json install
+./bin/flickr-cli auth
+exit
+git clone https://github.com/TheFox/flickr-cli.git
+git clone https://github.com/TheFox/flickr-cli.git
+composer install
+exit
+composer install
+composer install
+php --ini
+php --ini
+composer install
+composer install
+./bin/flickr-cli auth
+pwd
+exit
+composer install
+./bin/flickr-cli auth
+https://github.com/nani102/coldstore.git
+git clone https://github.com/nani102/coldstore.git
+pwd
+vagrant up
+exit
+exit
+exit
+exit
+gitclone https://github.com/AKSarav/VagrantWeblogicInfra-AnsibleRole
+which git
+git --version
+exit
+which git
+which gitclone
+man git
+git
+git help -a
+!
+exit
+hit help -a
+git help -a
+cleacl
+clear
+exit
+git help -a
+clear
+git ls-files
+git clone https://github.com/AKSarav/VagrantWeblogicInfra-AnsibleRole
+exit
+dir
+ls -lrt
+pwd
+git
+git help -g
+git --version
+git config --list
+git config -help
+git config --show-origin
+git config --show-origin
+pwd
+ls -a
+git config -global
+git config -global --list
+git config --global
+pwd
+cd .git
+pwd
+dir
+ls -lrt
+cd /c/gitrepo/
+dir
+ls
+ls -lart
+cd .git
+ls -lart
 git status
-
+pwd
+cd ..
+git status
+touch fileone.txt
+git status
+git add fileone.txt
+git status
+vi fileone.txt 
+git status
+git add fileone.txt 
+git status
+git commit -m "initial commit to the repository."
+touch fileto.txt
+touch filetwo.txt
+git status
+rm fileto.txt
+git status
+git add filetwo.txt 
+git status
+ls -lrt
+git log
+pwd
+cd /c/gitrepo/
+git log
+cd .git/objects/7d
+l
+ls -lrt
+cat 77f6ac97d1f4df87427dc0b62af391c7e5ea8d
+git cat-file -p 77f6ac97d1f4df87427dc0b62af391c7e5ea8d
+pwd
+ls -lrt
+git c
+git cat
+git help
+git cat-file
+git cat-file -p 77f6ac97d1f4df87427dc0b62af391c7e5ea8d
+cd ../5d
+ls
+ls -lrt
+git cat-file -p 6ada869bb99d6266217971671fc3c0652da894
+cd ../32
+ls
+git cat-file -p 2318c90d59147cf0b4877c9e2a8b3c3d572371
+cd ../../..
+git status
+git commit -i "committing second file."
+git commit -i "committing second file."
+git commit -i "committing second file."
+git commit filetwo.txt 
+git commit -help
+git commit -i filetwo.txt -m "commit second file"
+git status
+git rm filetwo.txt 
+git status
+git commit -m "filetwo.txt has been removed from repository"
+ls
+git commit -am "bypassing the staging area to the repository"
+vi fileone.txt 
+git status
+git diff
+git add -all
+git add --all
+git status
+git remote
+git remote add origin https://github.com/raova/git-sandbox.git
+git remote
+git origin
+git remote show origin
+git push origin master
+git pull origin master
+lt
+ls
+ls -all
+git push origin master
+git pull origin master
+git pull --allow-unrelated-histories origin master
+git pull --allow-unrelated-histories origin master
+git push origin master
+git reset --hard
+git pull --allow-unrelated-histories origin master
+git push origin master
+git status
 git add
+git add fileone.txt 
+git status
+git commit
+git commit -all
+git commit --all
+git status
+git commit
+git commit -m "commiting changes after resolving conflicts"
+git status
+git push origin master
+git status
+git status
+git add Vagrantfile 
+git status
+git commit -i Vagrantfile -m "Vagrant file for Hands on Ansible Course"
+git status
+git push origin master
+pwd
 
-git push origin 
